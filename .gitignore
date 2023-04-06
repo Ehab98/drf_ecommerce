@@ -1,0 +1,7 @@
+/venv
+.pytest_cashe
+**__pychase__/
+db.sqlite3
+.env
+.coverage
+.vscode
