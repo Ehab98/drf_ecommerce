@@ -4,20 +4,21 @@ from .models import Brand, Category, Product
 
 
 class CategorySerializer(serializers.ModelSerializer):
-    
     class Meta:
-        model=Category
-        fields = "__all__"
-        
+        model = Category
+        fields = ["name"]
+
+
 class BrandSerializer(serializers.ModelSerializer):
-    
     class Meta:
-        model=Brand
+        model = Brand
         fields = "__all__"
-        
+
 
 class ProductSerializer(serializers.ModelSerializer):
-    
+    brand = BrandSerializer()
+    category = CategorySerializer()
+
     class Meta:
-        model=Product
+        model = Product
         fields = "__all__"

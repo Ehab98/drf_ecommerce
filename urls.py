@@ -7,7 +7,10 @@ from rest_framework.routers import DefaultRouter
 from drf_ecommerce.product import views
 
 router = DefaultRouter()
-router.register(r'category',views.CategoryView)
+router.register(r'category',views.CategoryViewSet)
+router.register(r'brand',views.BrandViewSet)
+router.register(r'product',views.ProductViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
