@@ -1,5 +1,5 @@
 /venv
-/.pytest_cashe
+/.pytest_cache/
 /__pycache__/
 db.sqlite3
 .env
@@ -7,3 +7,4 @@ db.sqlite3
 .vscode
 schema.yml
 pytest.ini
+htmlcov
